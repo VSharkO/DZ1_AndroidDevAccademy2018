@@ -1,9 +1,11 @@
 public class Zadatak3 {
     //3. Write a program that prints a multiplication table for numbers up to 12.
 
+//this is solution for "all" numbers.
 
     public static void main(String[] args) {
-        int maxNum = 12, rez, max=maxNum*maxNum*10;
+        int maxNum = 50, rez, max=maxNum*maxNum*10; //max is variable that stores max number in current table,
+                                                    // so we can calculate number of spaces required.
 
         StringBuilder sb = new StringBuilder();
 
@@ -23,7 +25,6 @@ public class Zadatak3 {
         System.out.print(sb);
 
     }
-
     static int getSpaces(int max){
         int i=0;
         while(i<=max*10){

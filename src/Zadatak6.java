@@ -3,6 +3,7 @@ public class Zadatak6 {
         //Write a method that reverses a array.
         int[] arr = {-10,12,13,-14,15,16,22,99,87,28,38,56,43};
         int arrR[]=reverseArray(arr);
+
         for(int i=0;i<arr.length;i++)
         System.out.print(arrR[i]+" ");
     }

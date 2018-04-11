@@ -12,13 +12,16 @@ public class Zadatak8 {
     static int[] getNumDiggits(int num){
         int temp,rez[];
         ArrayList<Integer> Digits = new ArrayList<>();
+
         while(num%10>0){
             temp=num%10;
             num/=10;
             Digits.add(temp);
         }
+
         rez=new int[Digits.size()];
         int j=0;
+
         for(int i=rez.length-1;i>=0;i--){
             rez[j]=Digits.get(i);
             j++;
