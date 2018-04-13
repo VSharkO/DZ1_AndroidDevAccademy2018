@@ -26,15 +26,18 @@ public class SpecialniZadatak {
         int maxSpaces=getSpaces(max);
 
         while(number<=maxNum){
+
                 //Zadnji redci
                 for (int i = lastColumn; i >= firstColumn; i--) {
                     matrix[lastRow][i] = number;
                     number++;
+
                 }
                 //prvi stupci
                 for (int i = lastRow-1; i >= firstRow+1; i--) {
                     matrix[i][firstColumn] = number;
                     number++;
+
                 }
 
 
@@ -42,11 +45,14 @@ public class SpecialniZadatak {
                 for (int i = firstColumn; i <= lastColumn; i++) {
                     matrix[firstRow][i] = number;
                     number++;
+
                 }
                 //zadnji stupci
                 for (int i = firstRow+1; i <= lastRow-1; i++) {
                     matrix[i][lastColumn] = number;
                     number++;
+
+
                 }
                 lastRow--;
                 firstColumn++;
