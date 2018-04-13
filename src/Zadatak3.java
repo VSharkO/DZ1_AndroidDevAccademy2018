@@ -4,14 +4,14 @@ public class Zadatak3 {
 //this is solution for "all" numbers.
 
     public static void main(String[] args) {
-        int maxNum = 50, rez, max=maxNum*maxNum*10; //max is variable that stores max number in current table,
+        int maxNum = 50, rez, max=maxNum*maxNum*10; //max is variable that contains max number in current table,
                                                     // so we can calculate number of spaces required.
 
         StringBuilder sb = new StringBuilder();
 
         int maxSpaces=getSpaces(max);
 
-        for (int i = 1; i <= maxNum; i++) {
+        for (int i = 1; i <= maxNum; i++) { //start from 1 because we cant multiply number with 0
             for (int j = 1; j <= maxNum; j++) {
                 rez = i * j;
                 sb.append(rez);
